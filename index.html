@@ -11,37 +11,50 @@
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
-
+    <form action="/action_page.php" method="post">
       <!-- Add a label for 'fullname'-->
-
+      <label for="fullname">fullname</label>
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
       <!-- Include the place holder text "Enter Name" and make this input required -->
+      <input type="text" id="fullname" name="fullname" placeholder="Enter Name" required><br><br>
 
 
       <!-- Add a label for 'email'-->
-
+      <label for="email">email</label>
       <!-- Add a email input with the id and name attributes set to 'email' -->
       <!-- Include the place holder text "Enter Email" and make this input required -->
-
+      <input type="email" id="email" name="email" autocomplete="off" placeholder="Enter Email" required><br><br>
 
       <!-- Add a label for 'phone'-->
-
+      <label for="phone">phone</label>
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
       <!-- Include the place holder text "Enter Telephone (optional)" -->
-
+      <input type="tel" id="phone" name="phone" placeholder="Enter Telephone (optional)"><br><br>
 
       <!-- Add a label for 'message'-->
+      <label for="message">message</label>
 
       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
       <!-- Include the place holder text "Enter Message" -->
-
-
+      <textarea id="message" name="message" placeholder="Enter Message"></textarea><br><br>
       <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
+      <p>What entertainment do you attend? Please select more than one where applicable</p><br><br>
+      <input type="checkbox" id="entertain1" name="entertain1" value="Cinema">
+      <label for="entertain1">Cinema</label><br>
+      <input type="checkbox" id="entertain2" name="entertain2" value="Theatre (Play)">
+      <label for="entertain2">Theatre (Play)</label><br>
+      <input type="checkbox" id="entertain3" name="entertain3" value="Musical Theatre">
+      <label for="entertain3">Musical Theatre</label><br>
+      <input type="checkbox" id="entertain4" name="entertain4" value="Concert">
+      <label for="entertain4">Concert</label><br>
+      <input type="checkbox" id="entertain5" name="entertain5" value="Opera">
+      <label for="entertain5">Opera</label><br><br>
+   
+        
 
       <!-- Add an input with the type set to 'submit' -->
+      <input type="submit" value="Submit">
+    </form>
 
     
   </body>
